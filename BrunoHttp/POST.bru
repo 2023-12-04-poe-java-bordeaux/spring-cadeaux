@@ -1,0 +1,19 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseURL}}/api/cadeaux
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "nom": "tablette",
+      "description": "xxx",
+      "prix": 1000
+    }
+}

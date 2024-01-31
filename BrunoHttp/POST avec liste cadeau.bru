@@ -1,0 +1,22 @@
+meta {
+  name: POST avec liste cadeau
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseURL}}/api/cadeaux
+  body: json
+  auth: none
+}
+
+body:json {
+    {
+      "nom": "écouteurs",
+      "description": "sans fil",
+      "prix": 100,
+      "listeCadeau":{
+        "id": 1
+      }
+    }
+}
